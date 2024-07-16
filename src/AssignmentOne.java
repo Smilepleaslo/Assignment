@@ -25,3 +25,10 @@ public class HealthProfessional {
     public String getDoctortype() {
         return doctortype;
     }
+
+    public void PrintDetails(){
+        System.out.println("ID: " + id);
+        System.out.println("Name: " + name);
+        System.out.println("Doctor Type: " + doctortype);
+    }
+

@@ -4,6 +4,13 @@ public class Appointment{
     private String preferredtime;
     private HealthProfessional doctor;
 
+    public Appointment(){
+        this.patientname = "";
+        this.patientphone = "";
+        this.preferredtime = "";
+        this.doctor= none;
+    }
+
     public String getPatientName() {
         return patientname;
     }

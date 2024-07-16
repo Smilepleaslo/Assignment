@@ -26,7 +26,7 @@ public class HealthProfessional {
         return doctortype;
     }
 
-    public void PrintDetails(){
+    public void printDetails(){
         System.out.println("ID: " + id);
         System.out.println("Name: " + name);
         System.out.println("Doctor Type: " + doctortype);
@@ -58,8 +58,40 @@ public class GeneralPractitioner extends HealthProfessional {
     }
 
     @Override
-    public void PrintDetails() {
-        super.PrintDetails();
+    public void printDetails() {
+        super.printDetails();
+        System.out.println("Clinic Name: " + clinicname);
+        System.out.println("Qualifications: " + qualifications);
+    }
+}
+
+public class Dentist extends HealthProfessional {
+    private String clinicname;
+    private String qualifications;
+
+    public Dentist() {
+        super();
+        this.clinicname="";
+        this.qualifications="";
+    }
+
+    public Dentist(int id, String name, String doctortype, String clinicname, String qualifications) {
+        super(id, name, doctortype);
+        this.clinicname = clinicname;
+        this.qualifications = qualifications;
+    }
+
+    public String getClinicName() {
+        return clinicname;
+    }
+
+    public String getQualifications() {
+        return qualifications;
+    }
+
+    @Override
+    public void printDetails() {
+        super.printDetails();
         System.out.println("Clinic Name: " + clinicname);
         System.out.println("Qualifications: " + qualifications);
     }

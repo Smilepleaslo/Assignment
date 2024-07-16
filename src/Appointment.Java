@@ -12,19 +12,19 @@ public class Appointment{
         this.patientname = patientname;
     }
 
-    public String getPatientPhone() {
+    public int getPatientPhone() {
         return patientphone;
     }
 
-    public void setPatientPhone(String patientphone) {
+    public void setPatientPhone(int patientphone) {
         this.patientphone = patientphone;
     }
 
-    public String getPreferredTimeSlot() {
+    public String getPreferredTime() {
         return preferredtime;
     }
 
-    public void setPreferredTimeSlot(String preferredtime) {
+    public void setPreferredTime(String preferredtime) {
         this.preferredtime = preferredtime;
     }
 

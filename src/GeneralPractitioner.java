@@ -3,7 +3,6 @@ public class GeneralPractitioner extends HealthProfessional {
 
     public GeneralPractitioner() {
         super();
-        this.clinicname = "";
         this.qualifications = "";
     }
 
@@ -23,7 +22,6 @@ public class GeneralPractitioner extends HealthProfessional {
     @Override
     public void printDetails() {
         super.printDetails();
-        System.out.println("Clinic Name: " + clinicname);
         System.out.println("Qualifications: " + qualifications);
     }
 }

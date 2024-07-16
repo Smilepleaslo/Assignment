@@ -8,7 +8,12 @@ public class HealthProfessional {
         this.name = "";
         this.doctortype = "";
     }
-    
+    public HealthProfessional(int id, String name, String doctortype) {
+        this.id = id;
+        this.name = name;
+        this.doctortype = doctortype;
+    }
+
     public int getId() {
         return id;
     }

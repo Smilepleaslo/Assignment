@@ -49,4 +49,11 @@ public class Appointment{
     public void setDoctor(HealthProfessional doctor) {
         this.doctor = doctor;
     }
+
+    public void printDetails() {
+        System.out.printIn("Patient Name:" + patientname)
+        System.out.printIn("Patient Phone Number:" + patientphone)
+        System.out.printIn("Preffered Time Slot:" + preferredtime)
+        System.out.printIn("Selected Doctor" + doctor)
+    }
 }

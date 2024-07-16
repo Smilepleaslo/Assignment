@@ -6,9 +6,9 @@ public class Appointment{
 
     public Appointment(){
         this.patientname = "";
-        this.patientphone = "";
+        this.patientphone = 0;
         this.preferredtime = "";
-        this.doctor= none;
+        this.doctor= null;
     }
 
     public String getPatientName() {

@@ -3,6 +3,12 @@ public class HealthProfessional {
     private String name;
     private String doctortype;
 
+    public HealthProfessional() {
+        this.id = 0;
+        this.name = "";
+        this.doctortype = "";
+    }
+    
     public int getId() {
         return id;
     }
@@ -14,4 +20,3 @@ public class HealthProfessional {
     public String getDoctortype() {
         return doctortype;
     }
-    

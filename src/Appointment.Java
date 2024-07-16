@@ -11,6 +11,13 @@ public class Appointment{
         this.doctor= null;
     }
 
+    public Appointment(String patientname, int patientphone, String preferredtime, Healthprofessional doctor) {
+        this.patientname = patientname;
+        this.patientphone = patientphone;
+        this.preferredtime = preferredtime;
+        this.doctor= doctor;
+    }
+
     public String getPatientName() {
         return patientname;
     }

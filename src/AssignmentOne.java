@@ -8,5 +8,19 @@ public class AssignmentOne{
 
         Dentist dentist1 = new Dentist(4, "Dr. Karki", "Dentist", "DMD");
         Dentist dentist2 = new Dentist(5, "Dr. Sebanja", "Dentist", "DDS");
+        // Doctor Information
+        System.out.println("The List of Available Doctors are Given Below:");
+        System.out.println("General Practitioners:");
+        gp1.printDetails();
+        System.out.println("------------------------------");
+        gp2.printDetails();
+        System.out.println("------------------------------");
+        gp3.printDetails();
+        System.out.println("------------------------------");
+
+        System.out.println("Dentists:");
+        d1.printDetails();
+        System.out.println("------------------------------");
+        d2.printDetails();
     }
 }

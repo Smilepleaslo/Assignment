@@ -2,6 +2,7 @@ public class Appointment{
     private String patientname;
     private int patientphone;
     private String prefferedtime;
+    private HealthProfessional doctor;
 
     public String getPatientName() {
         return patientName;

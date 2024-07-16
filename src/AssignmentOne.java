@@ -18,12 +18,24 @@ public class HealthProfessional {
         return id;
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getDoctortype() {
         return doctortype;
+    }
+
+    public void setDoctortype(String doctortype) {
+        this.doctortype = doctortype;
     }
 
     public void printDetails(){
@@ -53,8 +65,16 @@ public class GeneralPractitioner extends HealthProfessional {
         return clinicname;
     }
 
+    public void setClinicName(String clinicname) {
+        this.clinicname = clinicname;
+    }
+
     public String getQualifications() {
         return qualifications;
+    }
+
+    public void setQualifications(String qualifications) {
+        this.qualifications = qualifications;
     }
 
     @Override
@@ -85,8 +105,16 @@ public class Dentist extends HealthProfessional {
         return clinicname;
     }
 
+    public void setClinicName(String clinicname) {
+        this.clinicname = clinicname;
+    }
+
     public String getQualifications() {
         return qualifications;
+    }
+
+    public void setQualifications(String qualifications) {
+        this.qualifications = qualifications;
     }
 
     @Override

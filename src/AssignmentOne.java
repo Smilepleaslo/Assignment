@@ -29,10 +29,13 @@ public class AssignmentOne{
 
         createAppointment("Abc Shrestha", 123456789, "10:00 AM", gp1);
         createAppointment("Bcd Shakya", 234567891, "11:00 AM", gp2);
-        createAppointment("Cde Prajapati", 345678912, "12:00 PM", gp3);
 
         createAppointment("Def karki", 456789123, "1:00 PM", dentist1);
         createAppointment("Efg Sebanja", 567891234, "2:00 PM", dentist2);
+        printExistingAppointments(appointmentsList);
+
+        cancelBooking(123456789);
+
         printExistingAppointments(appointmentsList);
     }
 
@@ -51,8 +54,8 @@ public class AssignmentOne{
     public static void printExistingAppointments(ArrayList<Appointment> appointmentsList) {
         if (appointmentsList.isEmpty()){
             System.out.println("No current Appointment");
-        }else {
-            System.out.println("Existing Appointments:");
+        } else {
+            System.out.println(" The Existing Appointments are listed below:");
             for (Appointment appointment : appointmentsList) {
                 System.out.println("Patient Name: " + appointment.getPatientName());
                 System.out.println("Patient Phone: " + appointment.getPatientPhone());
@@ -60,6 +63,24 @@ public class AssignmentOne{
                 System.out.println("Doctor: " + appointment.getDoctor().getName());
                 System.out.println("------------------------------");
             }
+        }
+    }
+
+    public static void cancelBooking(int patientphone) {
+        boolean found = false;
+        for (Appointment appointment : appointmentsList) {
+            if (appointment.getPatientPhone() == patientphone) {
+                appointmentsList.remove(appointment);
+                System.out.println("Booking cancelled for patient with phone number:" + patientphone);
+                System.out.println("------------------------------");
+                found = true;
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("No appointment found with patient phone number: " + patientphone);
+            System.out.println("------------------------------");
         }
     }
 }

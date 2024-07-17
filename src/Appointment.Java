@@ -56,7 +56,7 @@ public class Appointment{
         System.out.println("Preffered Time Slot:" + preferredtime);
 
         if (doctor != null) {
-            System.out.println("Doctor: " + doctor.getName();
+            System.out.println("Doctor: " + doctor.getName());
         } else {
             System.out.println("Doctor Not Selected");
         }

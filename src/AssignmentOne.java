@@ -27,6 +27,12 @@ public class AssignmentOne{
     private static ArrayList<Appointment> appointmentsList = new ArrayList<>();
 
     public static void createAppointment(String patientname, int patientphone, String preferredtime, HealthProfessional doctor){
-        
+        if (patientname.isEmpty() || patientphone==0 || preferredtime.isEmpty() || doctor==null){
+            System.out.println("Appointment cannot be created, All information should be provide");
+        } else {
+            Appointment appointment1 = new Appointment(patientname, patientphone, preferredtime, doctor);
+            appointmentsList.add(appointment1);
+            System.out.println("Appointment created successfully");
+        }
     }
 }

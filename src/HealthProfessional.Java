@@ -3,18 +3,21 @@ public class HealthProfessional {
     private String name;
     private String doctortype;
 
+    //default constructor
     public HealthProfessional() {
         this.id = 0;
         this.name = "";
         this.doctortype = "";
     }
 
+    //second constructor to initialise instance variables
     public HealthProfessional(int id, String name, String doctortype) {
         this.id = id;
         this.name = name;
         this.doctortype = doctortype;
     }
 
+    //getters and setters
     public int getId() {
         return id;
     }
@@ -39,6 +42,7 @@ public class HealthProfessional {
         this.doctortype = doctortype;
     }
 
+    //Method to print details
     public void printDetails() {
         System.out.println("ID: " + id);
         System.out.println("Name: " + name);

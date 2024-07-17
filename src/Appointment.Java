@@ -4,6 +4,7 @@ public class Appointment{
     private String preferredtime;
     private HealthProfessional doctor;
 
+    //default constructor
     public Appointment(){
         this.patientname = "";
         this.patientphone = 0;
@@ -11,6 +12,7 @@ public class Appointment{
         this.doctor= null;
     }
 
+    //second constructor to initialise instance variables
     public Appointment(String patientname, int patientphone, String preferredtime, HealthProfessional doctor) {
         this.patientname = patientname;
         this.patientphone = patientphone;
@@ -18,6 +20,7 @@ public class Appointment{
         this.doctor= doctor;
     }
 
+    //getters and setters
     public String getPatientName() {
         return patientname;
     }
@@ -50,6 +53,7 @@ public class Appointment{
         this.doctor = doctor;
     }
 
+    //Method to print details
     public void printDetails() {
         System.out.println("Patient Name:" + patientname);
         System.out.println("Patient Phone Number:" + patientphone);

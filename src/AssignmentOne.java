@@ -19,8 +19,8 @@ public class AssignmentOne{
         System.out.println("------------------------------");
 
         System.out.println("Dentists:");
-        d1.printDetails();
+        dentist1.printDetails();
         System.out.println("------------------------------");
-        d2.printDetails();
+        dentist2.printDetails();
     }
 }

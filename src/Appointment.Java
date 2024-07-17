@@ -11,7 +11,7 @@ public class Appointment{
         this.doctor= null;
     }
 
-    public Appointment(String patientname, int patientphone, String preferredtime, Healthprofessional doctor) {
+    public Appointment(String patientname, int patientphone, String preferredtime, HealthProfessional doctor) {
         this.patientname = patientname;
         this.patientphone = patientphone;
         this.preferredtime = preferredtime;

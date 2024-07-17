@@ -45,6 +45,7 @@ public class HealthProfessional {
         System.out.println("Doctor Type: " + doctortype);
     }
 
+    @Override
     public String toString() {
         return String.format(
                 "HealthProfessional [ID: %d, name: %s, Doctor Type: %s]", id, name, doctortype);

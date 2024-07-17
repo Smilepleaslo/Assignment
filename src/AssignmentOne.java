@@ -1,6 +1,5 @@
 public class AssignmentOne{
-//part 3-Using classes and objects
-
+    //part 3-Using classes and objects
     public static void main(String[] args) {
         GeneralPractitioner gp1 = new GeneralPractitioner(1, "Dr. Shrestha", "General Practitioner", "MBBS");
         GeneralPractitioner gp2 = new GeneralPractitioner(2, "Dr. Shakya", "General Practitioner", "B.Med");
@@ -22,5 +21,12 @@ public class AssignmentOne{
         dentist1.printDetails();
         System.out.println("------------------------------");
         dentist2.printDetails();
+    }
+
+    // Part 5 –  Collection of appointments
+    private static ArrayList<Appointment> appointmentsList = new ArrayList<>();
+
+    public static void createAppointment(String patientname, int patientphone, String preferredtime, HealthProfessional doctor){
+        
     }
 }
